@@ -41,11 +41,11 @@ def get_bot_response():
     conversation_history += "Chatbot: " + bot_response + "\n"
 
     # Write to the log file
-    with open("debug3.log", "a") as f2:
+    with open("debug.log", "a") as f2:
         f2.write(timestamp + strresponse)
 
     # Write the updated conversation history to the file
-    with open("conversation3.txt", "a") as f1:
+    with open("conversation.txt", "a") as f1:
         f1.write(timestamp + " You: " + user_input + "\n")
         f1.write(timestamp + " Chatbot: " + bot_response + "\n\n")
 
